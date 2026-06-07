@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <section>
+      <nav class="navbar">
+        <!-- <span class="hamburger" onclick="toggleMenu()" style="color: white;">_-_</span> -->
+        <a href="#home" class="logo">RA</a>
+        <div class="nav-left">
+          <div class="hamburger" id="hamburger">☰</div>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <!-- Hero -->
+    <section id="home">
+      <div class="hero">
+        <p class="hero-tag">Welcome to my portfolio</p>
+        <h1 class="hero-name">Rizwan Ali</h1>
+        <p class="hero-title"><span>Web Developer</span></p>
+        <p class="hero-description fade-in">
+          I build clean, responsive, and user-friendly websites and web
+          applications that deliver real value. Passionate about great code and
+          elegant design.
+        </p>
+        <a href="#projects" class="hero-btn">View My Work</a>
+      </div>
+    </section>
+    <!--     ABOUT     -->
+    <section id="about" class="about">
+      <div class="about-width">
+        <h2 class="about-title">About Me</h2>
+        <div class="about-text">
+          <p>A little background on who I am</p>
+          <p>
+            Hello! I'm <span>Rizwan Ali</span>, a passionate web developer with
+            a strong focus on building modern, performant, and accessible web
+            experiences.
+          </p>
+          <p>
+            I specialize in front-end development with a solid understanding of
+            back-end technologies. I enjoy turning complex problems into simple,
+            beautiful, and intuitive designs.
+          </p>
+          <p>
+            When I'm not coding, I stay up to date with the latest web trends,
+            contribute to open-source projects, and continuously improve my
+            skills.
+          </p>
+          <a href="#contact" class="about-btn">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+    <!--        SKILLS     -->
+    <section id="skills" class="skills">
+      <h2 class="skills-title">Skills</h2>
+      <p class="skills-subtitle">Technologies I Work With</p>
+
+      <div class="skills-cards">
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <h3>HTML</h3>
+          <p>Semantic markup, accessibility, and structured web content.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <h3>CSS</h3>
+          <p>Responsive layouts, animations, flexbox, and modern styling.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>DOM manipulation, events, and interactive web experiences.</p>
+        </div>
+      </div>
+    </section>
+    <!--                Projects             -->
+    <section id="projects" class="projects">
+      <h2 class="projects-title">Projects</h2>
+      <p class="projects-subtitle">Things I Have Built</p>
+
+      <div class="projects-cards">
+        <div class="project-card">
+          <div class="project-img">🦷</div>
+          <div class="project-info">
+            <h3>Dental Clinic Website</h3>
+            <p>
+              A modern, responsive website for a dental clinic with appointment
+              booking, services overview, and contact section.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#">Live Demo</a>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">💼</div>
+          <div class="project-info">
+            <h3>Portfolio Website</h3>
+            <p>
+              A clean and minimal personal portfolio to showcase skills,
+              projects, and contact information with smooth scrolling.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#">Live Demo</a>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-img">✅</div>
+          <div class="project-info">
+            <h3>Todo App</h3>
+            <p>
+              A fully functional todo app with add, delete, and complete
+              features. Data saved in localStorage so it persists on refresh.
+            </p>
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#">Live Demo</a>
+              <a href="#">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----------------CONTACT----------------->
+    <section id="contact" class="contact">
+      <div class="contact-top">
+        <h3>Contact Me</h3>
+        <p>
+          Have a project in mind or just want to say hello? Feel free to reach
+          out!
+        </p>
+      </div>
+
+      <div class="contact-links">
+        <a href="rizwan110pk@gmail.com" class="contact-email">
+          📧 rizwan110pk@gmail.com
+        </a>
+        <div class="contact-socials">
+          <a href="https://github.com/rizwanali8" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/yourname" target="_blank"
+            >LinkedIn</a
+          >
+        </div>
+      </div>
+      <div class="contact-footer">
+        <p>Designed & Built by <span>Rizwan Ali</span> &copy;2026</p>
+      </div>
+    </section>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".nav-links").classList.toggle("open");
+      }
+      const hamburger = document.getElementById("hamburger");
+      const navLinks = document.getElementById("navLinks");
+      hamburger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        navLinks.classList.toggle("open");
+        console.log("clicked", navLinks.classList);
+      });
+      document.addEventListener("click", () => {
+        navLinks.classList.remove("open");
+      });
+    </script>
+  </body>
+</html>

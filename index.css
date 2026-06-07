@@ -1,0 +1,464 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --navbar-height: 70px;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: rgb(144, 196, 214);
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  padding-top: var(--navbar-height);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #2a2a4f;
+  position: fixed;
+  height: var(--navbar-height);
+  top: 0px;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.logo {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+.logo:hover {
+  transform: scale(1.3);
+}
+section {
+  scroll-margin-top: 70px;
+}
+.nav-links {
+  display: flex;
+  gap: 5rem;
+  list-style: none;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: #e94560;
+}
+.hamburger {
+  display: none;
+}
+
+/* ----- Hero ----- */
+.hero {
+  padding: 3rem 0 0 3rem;
+  min-height: 100vh;
+}
+.hero-tag {
+  color: rgb(23, 84, 92);
+  font-size: 1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  margin-top: 20px;
+}
+.hero-name {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  color: rgb(11, 11, 85);
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+.hero-title {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  color: rgb(23, 92, 105);
+  margin-bottom: 1.5rem;
+}
+.hero-description {
+  max-width: 500px;
+  font-size: 1rem;
+  color: rgb(23, 84, 92);
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
+}
+.hero-btn {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border: 1px solid black;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all 0.3s;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  background: rgb(23, 84, 92);
+  box-shadow: #1a1a2e;
+}
+.btn1:hover {
+  color: #e94560;
+}
+
+/* ----- About ----- */
+
+.about {
+  background: rgb(106, 157, 174);
+  min-height: 100vh;
+}
+.about-width {
+  max-width: 500px;
+  padding: 3rem 0 0 3rem;
+}
+.about-title {
+  line-height: 1.8;
+  font-size: 2.5rem;
+  color: white;
+  text-decoration-line: underline;
+}
+.about-text p {
+  margin-bottom: 1.5rem;
+  color: rgb(0, 0, 0);
+}
+.about-btn {
+  display: inline-block;
+  padding: 0.85rem 2rem;
+  border: 1px solid black;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all 0.3s;
+  margin-right: 1rem;
+  margin-bottom: 0.5rem;
+  background: rgb(23, 84, 92);
+  box-shadow: #1a1a2e;
+}
+.about-btn:hover {
+  color: #e94560;
+}
+/* ----------- Skills ----------- */
+.skills {
+  padding: 4rem 3rem;
+  /*background: rgb(120, 170, 185);*/
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  color: white;
+  text-decoration: underline;
+  margin-bottom: 0.5rem;
+}
+
+.skills-subtitle {
+  color: black;
+  margin-bottom: 3rem;
+}
+
+.skills-cards {
+  display: flex;
+  gap: 2rem;
+}
+
+.skill-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  flex: 1; /* equal width cards */
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px); /* lifts card up on hover */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.skill-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+  font-size: 1.3rem;
+  color: rgb(11, 11, 85);
+  margin-bottom: 0.5rem;
+}
+
+.skill-card p {
+  color: black;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+/* --------- Projects --------- */
+.projects {
+  padding: 3rem 3rem;
+  background: rgb(106, 157, 174);
+}
+
+.projects-title {
+  font-size: 2.5rem;
+  color: white;
+  text-decoration: underline;
+}
+
+.projects-subtitle {
+  color: rgb(23, 84, 92);
+  margin-bottom: 3rem;
+}
+
+.projects-cards {
+  display: flex;
+  gap: 2rem;
+}
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.project-img {
+  background: rgb(23, 84, 92);
+  font-size: 4rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.project-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex: 1; /* pushes links to bottom */
+}
+
+.project-info h3 {
+  font-size: 1.2rem;
+  color: rgb(11, 11, 85);
+}
+
+.project-info p {
+  color: rgb(23, 84, 92);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Tags */
+.project-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.project-tags span {
+  background: rgb(144, 196, 214);
+  color: rgb(11, 11, 85);
+  padding: 0.2rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* Links */
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto; /* sticks to bottom of card */
+}
+
+.project-links a {
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.project-links a:first-child {
+  background: rgb(23, 84, 92);
+  color: white;
+}
+
+.project-links a:last-child {
+  border: 1px solid rgb(23, 84, 92);
+  color: rgb(23, 84, 92);
+}
+
+.project-links a:hover {
+  opacity: 0.8;
+}
+/* -------- CONTACT --------*/
+.contact {
+  padding: 4rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centers everything horizontally */
+  text-align: center;
+  gap: 2rem;
+}
+
+/* Top */
+.contact-top h3 {
+  font-size: 2.5rem;
+  color: white;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.contact-top p {
+  color: black;
+  font-size: 1rem;
+  max-width: 400px;
+}
+
+/* Email */
+.contact-email {
+  display: block;
+  background: #0f6a76;
+  color: rgb(241, 241, 241);
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0.8rem 2rem;
+  border: 1px solid white;
+  border-radius: 4px;
+  transition: all 0.3s;
+}
+
+.contact-email:hover {
+  background: rgb(250, 189, 189);
+  color: rgb(23, 84, 92); /* inverts on hover */
+}
+
+/* GitHub & LinkedIn */
+.contact-socials {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.contact-socials a {
+  color: rgb(13, 56, 70);
+  text-decoration: none;
+  font-size: 1rem;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.contact-socials a:hover {
+  color: rgb(164, 6, 6);
+  border-bottom: 1px solid black; /* underline on hover */
+}
+
+/* Footer */
+.contact-footer {
+  color: rgb(156, 4, 4);
+  font-size: 0.85rem;
+  border-top: 1px solid black;
+  padding-top: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* -------------  Mobile  ---------  */
+@media (max-width: 768px) {
+  :root {
+    --navbar-height: 60px;
+  }
+  body {
+    padding-top: var(--navbar-height);
+  }
+  .navbar {
+    height: var(--navbar-height);
+    justify-content: center;
+    position: fixed;
+  }
+  .nav-left {
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .logo {
+    text-align: center;
+  }
+  .hamburger {
+    display: block;
+    /*position: absolute;
+    left: 1rem;*/
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+  }
+  .nav-links {
+    display: none; /* hide on mobile by default */
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    background: #1a1a2e;
+    gap: 1rem;
+    min-width: 100px;
+    border-radius: 0 0 8px 0;
+    z-index: 100;
+    padding-left: 20px;
+  }
+
+  .nav-links.open {
+    display: flex; /* show on click */
+  }
+  /* hero */
+  .hero {
+    padding: 2rem 0 0 1rem;
+    height: auto;
+  }
+  .about {
+    height: auto;
+    width: 100%;
+  }
+  .skills {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+  .skills-cards {
+    flex-direction: column;
+  }
+  .projects {
+    width: 100%;
+  }
+  .projects-cards {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .contact {
+    flex-direction: column;
+    height: auto;
+  }
+  .contact p {
+    padding: 3rem 1rem;
+  }
+}
