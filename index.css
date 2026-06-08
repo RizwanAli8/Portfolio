@@ -60,6 +60,7 @@ section {
 /* ----- Hero ----- */
 .hero {
   padding: 3rem 0 0 3rem;
+  min-height: 100vh;
 }
 .hero-tag {
   color: rgb(23, 84, 92);
@@ -112,6 +113,7 @@ section {
 
 .about {
   background: rgb(106, 157, 174);
+  min-height: auto;
 }
 .about-width {
   max-width: 500px;
